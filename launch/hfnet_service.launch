@@ -1,0 +1,6 @@
+<launch>
+    <node name="demo_hfnet_server" pkg="hfnet_server" type="demo_hfnet_server.py" output="screen"/>
+
+    <node name="hfnet_client" pkg="hfnet_server" type="hfnet_client" output="screen">
+    </node>
+</launch>

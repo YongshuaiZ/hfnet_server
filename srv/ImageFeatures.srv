@@ -1,0 +1,8 @@
+sensor_msgs/Image image
+---
+std_msgs/Header header          # must have the same stamp with corresponding image message
+std_msgs/Bool sorted_by_score   # whether the keypoints are sorted in descending order of their scores
+KeyPoint[] keypoints
+float32[] scores       # score of each keypoint, must be either in the same size with keypoints or empty
+std_msgs/Float32MultiArray descriptors  # local descriptors of keypoints
+float32[] global_descriptor    # global descriptor of the full image
